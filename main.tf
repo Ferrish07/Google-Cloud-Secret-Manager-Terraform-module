@@ -31,7 +31,6 @@ resource "google_secret_manager_secret" "this" {
         }
       }
     }
-    auto = length(var.replication_locations) > 0 ? null : true
   }
 }
 
