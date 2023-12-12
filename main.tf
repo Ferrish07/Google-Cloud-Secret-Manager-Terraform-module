@@ -5,7 +5,7 @@ terraform {
 resource "random_password" "this" {
   count       = var.secret == "" ? 1 : 0
   length      = var.length
-  number      = var.has_numeric_chars
+  numeric     = var.has_numeric_chars
   min_numeric = var.min_numeric_chars
   upper       = var.has_upper_chars
   min_upper   = var.min_upper_chars
